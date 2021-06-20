@@ -1,6 +1,6 @@
 # FTS-Air-Quality-Index-Prediction
 
-Contributions
+Contributions:
 
 Abhishek - City_by_day_visualizations_2.ipynb
            City by hour analysis with rnn.ipynb
