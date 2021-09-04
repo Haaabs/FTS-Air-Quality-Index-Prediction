@@ -1,88 +1,46 @@
 
+# Machine Learning Internship at FTS
 
-**Air Quality Index Prediction**
-
-**Machine Learning Internship at FTS**
+## Air Quality Index Prediction
 
 By,
-
 Akshata Kotti
-
 Shubham Urmaliya
-
 Abhishek
-
 Shreya Basu
-
 Neha Kumari
-
 Lokesh
 
+## Contents
+    - Introduction
+    - Data Visualisation before preprocessing
+    - Data Visualisation on AQI
+    - Data preprocessing
+    - Missing value treatment
+    - Air Quality Index(AQI) calculation
+    - Outlier treatment
+    - Data Visualisation after preprocessing
+    - Model Building
+    - XGBoost
+    - Stacked LSTM
+
+### Introduction
+During the project We were given two datasets:
+
+    1. cities\_by\_day → day-wise information including the amount of various chemical substances present in different cities and the AQI information.
+    2. cities\_by\_hours → hours-wise information including the amount of various chemical substances present in different cities and the AQI information.
+### Approach For Analysing Data
+ *  We have initially performed Exploratory Data Analysis including Data preprocessing, Outlier.
+ * treatment and Data visualization to study the datasets.
+ * We have then used certain algorithms like XGBoost and Stacked LSTM to create a model that
+ * will predict the AQI for any future reference using the input we are giving.
 
 
-
-
-**Contents**
-
-● Problem Statement
-
-● Data Visualisation before preprocessing
-
-● Data Visualisation on AQI
-
-● Data preprocessing
-
-❖ Missing value treatment
-
-❖ Air Quality Index(AQI) calculation
-
-❖ Outlier treatment
-
-● Data Visualisation after preprocessing
-
-● Model Making
-
-❖ XGBoost
-
-❖ Stacked LSTM
-
-
-
-
-
-**Problem Statement**
-
-To create a model which will predict the Air Quality Index (AQI).
-
-We were given two datasets:
-
-\1. cities\_by\_day → day-wise information including the amount of various chemical substances
-
-present in different cities and the AQI information.
-
-\2. cities\_by\_hours → hours-wise information including the amount of various chemical
-
-substances present in different cities and the AQI information.
-
-We have initially performed Exploratory Data Analysis including Data preprocessing, Outlier
-
-treatment and Data visualization to study the datasets.
-
-We have then used certain algorithms like XGBoost and Stacked LSTM to create a model that
-
-will predict the AQI for any future reference using the input we are giving.
-
-
-
-
-
-**Data Visualisation before preprocessing**
-
-We used some visualisation techniques to understand the trends and relationships between different
-
+### Data Visualisation before preprocessing
+* We used some visualisation techniques to understand the trends and relationships between different
 columns. The results are following.
 
-● There are a lot of missing values for xylene,PM2.5 and NH3. But after looking at correlations
+There are a lot of missing values for xylene,PM2.5 and NH3. But after looking at correlations
 
 AQI is reasonably dependent on these gases. So it is not good to drop these columns.
 
